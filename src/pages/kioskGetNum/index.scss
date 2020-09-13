@@ -1,0 +1,35 @@
+$border-radius: 10px;
+
+.get-num-content {
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: -4px -4px 8px rgba(128, 128, 128, 0.1), 4px 4px 8px rgba(128, 128, 128, 0.1);
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  .btn-get-num {
+    background-color: #0854a0;
+    width: 100%;
+    height: 15rem;
+    border-radius: $border-radius;
+    * {
+      overflow: inherit;
+      }
+    & > span {
+      width: 100%;
+      height: 15rem;
+      font-size: 2.5rem;
+      color: #fff;;
+      text-transform: uppercase;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+    .innos-ui-button-inner {
+      font-size: 1.5rem!important;
+    }
+  }
+  .btn-get-num:hover {
+    background-color: #06427e;
+  }
+}

@@ -1,0 +1,90 @@
+$nav-padding: 10px;
+$head-height: 5rem;
+$nav-height: 3rem;
+
+.kiosk-wrapper {
+  // background-image: url('../../assets/images/background.png');
+  background-color: #E9F3FD;
+	background-size: contain;
+	background-repeat: round;
+	height: 100vh;
+  width: 100vw;
+  * {
+    box-sizing: border-box;
+  }
+  .kiosk-nav {
+    background-color: #b4d7fd;
+    position: fixed;
+    width: 100%;
+    height: $head-height;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 1rem;
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: $nav-height;
+      padding: 0 $nav-padding;
+      margin-bottom: 1rem;
+      .nav-item {
+        width: 200px;
+        text-align: center;
+      }
+      .company-name {
+        width: max-content;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2.5rem;
+      }
+      .btn-login {
+        font-size: 1rem;
+        text-align: center;
+        height: 70px;
+        text-decoration: none;
+        margin-right: 1rem;
+        color: #0E3680;
+        border: 1px solid #0E3680;
+        padding: 1rem 2.5rem 1rem;
+        border-radius: 2rem;
+        font-weight: normal;
+      }
+    }
+
+    .kiosk-code{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+
+    .nav-logo {
+      margin-left: 1rem;
+    }
+  }
+
+  .kiosk-content {
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+
+    .kiosk--content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .kiosk-wrapper {
+    .kiosk-nav {
+      font-size: 25px;
+    }
+
+  }
+}
